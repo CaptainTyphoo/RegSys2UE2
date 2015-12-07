@@ -44,3 +44,5 @@ parSys.qZ1max = 4.5e-3/60;        % Maximaler Zufluss Z1
 parSys.qZ3max = 4.5e-3/60;        % Maximaler Zufluss Z3
 parSys.qZ1min = 0;                % Minimaler Zufluss Z1
 parSys.qZ3min = 0;                % Minimaler Zufluss Z3
+
+Sollwertfiler;
