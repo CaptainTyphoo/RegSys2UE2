@@ -1,8 +1,6 @@
 parSollwertfilter.Ta=0.2;
-lambda=-2;
+lambda=-2.3*0.01;
 parSollwertfilter.x0_Filter=[0;0;0];
-
-
 
 p= poly(lambda*eye(3));
 

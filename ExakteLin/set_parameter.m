@@ -7,8 +7,8 @@
 % --------------------------------------
 %
 
-% clear all;
-% close all;
+ clear all;
+ close all;
 
 % Parameter des Systems
 parSys.Atank     = 1.539e-2;      % Grundfl?che Tank
@@ -36,7 +36,7 @@ parSys.dh12min   = 0.1e-3;
 parSys.Ta = 0.2;                
 
 % Anfangsbedingung
-parSys.h1_0 = 0.30;
+parSys.h1_0 = 0.18; % aus Maple
 parSys.h2_0 = 0.10;
 parSys.h3_0 = 0.22;
 
@@ -49,5 +49,10 @@ parSys.qZ3min = 0;                % Minimaler Zufluss Z3
 Sollwertfilter;
 
 % Ruhelagen
-h10 = .1800312371;
-qZ10 = 0.3454039310e-4;
+parSys.h10 = .1800312371;
+parSys.qZ10 = 0.3454039310e-4;
+
+% Fehlerdynamik
+% Eigenwerte bei -0.01
+parSys.a0 = 1e-4;
+parSys.a1 = 0.02;
