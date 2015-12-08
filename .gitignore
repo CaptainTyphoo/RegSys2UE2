@@ -1,5 +1,6 @@
-*.avi
 *.autosave
+*.asv
+*.avi
 *.bak
 *.mexmaci64
 *.mexa64
@@ -7,4 +8,3 @@
 *.mexw64
 slprj/
 **/slprj/
-ExakteLin/testdq.asv
