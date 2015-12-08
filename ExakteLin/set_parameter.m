@@ -36,7 +36,7 @@ parSys.dh12min   = 0.1e-3;
 parSys.Ta = 0.2;                
 
 % Anfangsbedingung
-parSys.h1_0 = 0.18; % aus Maple
+parSys.h1_0 = 0.1519509213; % aus Maple
 parSys.h2_0 = 0.10;
 parSys.h3_0 = 0.22;
 
@@ -49,10 +49,25 @@ parSys.qZ3min = 0;                % Minimaler Zufluss Z3
 Sollwertfilter;
 
 % Ruhelagen
-parSys.h10 = .1800312371;
-parSys.qZ10 = 0.3454039310e-4;
+%h10 = .1800312371;
+%qZ10 = 0.3454039310e-4; % m3/s
 
 % Fehlerdynamik
-% Eigenwerte bei -0.01
-parSys.a0 = 1e-4;
-parSys.a1 = 0.02;
+% Eigenwerte bei -0.1
+parSys.a0 = 1e-2; %1e-4;
+parSys.a1 = 0.2; %0.02;
+
+params;
+
+% Linearisierung
+eq12_h1gh2_dh1_subs = 0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) ^ 2) * A12 + alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(dh12min) ^ (-0.1e1 / 0.2e1)) / 0.2e1;
+eq12_h1gh2_dh1_d = 4 * alpha12_0 * A12 * Dh12 * rho * g / eta / lambdac12;
+k_dh1 = (eq12_h1gh2_dh1_subs - eq12_h1gh2_dh1_d)/dh12min;
+parSys.k_dh1 = k_dh1;
+parSys.d_dh1 = eq12_h1gh2_dh1_d;
+
+eq12_h1gh2_dh2_subs = -0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(dh12min) / lambdac12) ^ 2) * A12 - alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(dh12min) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * dh12min ^ (-0.1e1 / 0.2e1) / 0.2e1;
+eq12_h1gh2_dh2_d = -4 * alpha12_0 * A12 * Dh12 * rho * g / eta / lambdac12;
+k_dh2 = (eq12_h1gh2_dh2_subs - eq12_h1gh2_dh2_d)/dh12min;
+parSys.k_dh2 = k_dh2;
+parSys.d_dh2 = eq12_h1gh2_dh2_d;
