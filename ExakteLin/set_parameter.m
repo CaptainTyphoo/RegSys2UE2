@@ -36,7 +36,7 @@ parSys.dh12min   = 0.1e-3;
 parSys.Ta = 0.2;                
 
 % Anfangsbedingung
-parSys.h1_0 = 0.1519509213; % aus Maple
+parSys.h1_0 = 0.18; % aus Maple
 parSys.h2_0 = 0.10;
 parSys.h3_0 = 0.22;
 
@@ -54,20 +54,28 @@ Sollwertfilter;
 
 % Fehlerdynamik
 % Eigenwerte bei -0.1
-parSys.a0 = 1e-2; %1e-4;
-parSys.a1 = 0.2; %0.02;
+parSys.a0 = 1e-2; 
+parSys.a1 = 0.2; 
 
 params;
 
 % Linearisierung
+% dq12_dh1(dh12min)
 eq12_h1gh2_dh1_subs = 0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) ^ 2) * A12 + alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(dh12min) ^ (-0.1e1 / 0.2e1)) / 0.2e1;
+% dq12_dh1(0)
 eq12_h1gh2_dh1_d = 4 * alpha12_0 * A12 * Dh12 * rho * g / eta / lambdac12;
+% Steigung von dq12_dh1
 k_dh1 = (eq12_h1gh2_dh1_subs - eq12_h1gh2_dh1_d)/dh12min;
+% Parameter fuer Geradengleichung von dq12_dh1
 parSys.k_dh1 = k_dh1;
 parSys.d_dh1 = eq12_h1gh2_dh1_d;
 
+% dq12_dh2(dh12min)
 eq12_h1gh2_dh2_subs = -0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(dh12min) / lambdac12) ^ 2) * A12 - alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(dh12min) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * dh12min ^ (-0.1e1 / 0.2e1) / 0.2e1;
+% dq12_dh2(0)
 eq12_h1gh2_dh2_d = -4 * alpha12_0 * A12 * Dh12 * rho * g / eta / lambdac12;
+% Steigung von dq12_dh2
 k_dh2 = (eq12_h1gh2_dh2_subs - eq12_h1gh2_dh2_d)/dh12min;
+% Parameter fuer Geradengleichung von dq12_dh2
 parSys.k_dh2 = k_dh2;
 parSys.d_dh2 = eq12_h1gh2_dh2_d;
