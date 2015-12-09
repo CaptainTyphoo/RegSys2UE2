@@ -46,6 +46,8 @@ parSys.qZ3max = 4.5e-3/60;        % Maximaler Zufluss Z3
 parSys.qZ1min = 0;                % Minimaler Zufluss Z1
 parSys.qZ3min = 0;                % Minimaler Zufluss Z3
 
+
+%Sollwertfilter berechnen
 Sollwertfilter;
 
 % Ruhelagen
@@ -57,6 +59,8 @@ Sollwertfilter;
 parSys.a0 = 1e-2; 
 parSys.a1 = 0.2; 
 
+
+%Abkuerzungen fuer die folgenden Berechnungen
 params;
 
 % Linearisierung
