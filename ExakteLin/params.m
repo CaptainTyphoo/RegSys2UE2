@@ -18,5 +18,4 @@ lambdac23 = parSys.lambdac23;
 hmin = parSys.hmin;
 hmax = parSys.hmax;
 dh12min = parSys.dh12min;
-a0 = parSys.a0;
-a1 = parSys.a1;
+dh23min = parSys.dh23min;
