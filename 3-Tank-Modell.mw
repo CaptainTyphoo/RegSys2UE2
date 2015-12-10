@@ -835,13 +835,19 @@ diff(q23(h2, h3), h3) = 'dq23_dh3'
 </Group>
 <Group view="code" labelreference="L646" drawlabel="true">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">dq23_h2gh3_dh3:=eq_dq23_dh3 assuming h2&gt;h3:</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">dq23_h2gh3_dh3:=eq_dq23_dh3 assuming h2&gt;h3;</Text-field>
 </Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEvZHEyM19oMmdoM19kaDNGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSM6PUYnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUYjNigtRiw2JVEpZHEyM19kaDNGJ0YvRjItRjY2LVEiPUYnRjlGO0Y+RkBGQkZERkZGSEZKRk0tRiM2Jy1GNjYtUSomdW1pbnVzMDtGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GZ24tRiM2KC1JJm1mcmFjR0YkNigtSSNtbkdGJDYkUSIxRidGOS1GX282JFEiMkYnRjkvJS5saW5ldGhpY2tuZXNzR0Zhby8lK2Rlbm9tYWxpZ25HUSdjZW50ZXJGJy8lKW51bWFsaWduR0Zpby8lKWJldmVsbGVkR0Y9LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GYnAtRlxvNigtRiM2MC1GLDYlUSphbHBoYTIzXzBGJ0YvRjJGXnAtSSVtc3VwR0YkNiUtRiw2JVEkRDIzRidGL0YyLUZfbzYkUSIzRidGOS8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRidGXnAtRiw2JVEnJiM5NjE7RicvRjBGPUY5Rl5wLUYsNiVRImdGJ0YvRjJGXnAtSShtZmVuY2VkR0YkNiQtRiM2JkZeby1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIRmZuRmhuLUYjNiQtRlxxNiUtRiM2KC1GLDYlUSV0YW5oRidGanFGOS1GNjYtUTAmQXBwbHlGdW5jdGlvbjtGJ0Y5RjtGPkZARkJGREZGRkhGYXBGY3AtRl9yNiQtRiM2Ji1GXG82KC1GIzYwRmJvRl5wRl5xRl5wRmdxRl5wLUkmbXNxcnRHRiQ2I0Zib0ZecC1GW3Q2I0ZbckZecC1GW3Q2Iy1GIzYmLUYsNiVRI2gyRidGL0YyRmNyLUYsNiVRI2gzRidGL0YyRjkvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOS1GIzYoLUYsNiVRJyYjOTUxO0YnRmpxRjlGXnAtRiw2JVEqbGFtYmRhYzIzRidGL0YyRml0Rlx1RjlGZW9GZ29Gam9GXHBGaXRGXHVGOUY5Rml0Rlx1RjlGYm9GZHFGOUY5RjlGXnAtRiw2JVEnJiM5NjA7RidGanFGOUZpdEZcdUY5Rl51RmVvRmdvRmpvRlxwRml0Rlx1RjlGY3ItRiM2KC1GXG82KEZeby1GX282JFEiOEYnRjlGZW9GZ29Gam9GXHBGXnAtRlxvNigtRiM2MEZocEZecEZqckZecC1GXHE2JUZecUZib0ZkcUZecEZmdUZecEZqc0ZecEZddEZpdEZcdUY5LUYjNiZGX3RGaXRGXHVGOUZlb0Znb0Zqb0ZccEZpdEZcdUY5RjlGaXRGXHVGOUZpdEZcdUY5">L0kpZHEyM19kaDNHNiIsJioySSphbHBoYTIzXzBHRiQiIiJJJEQyM0dGJCIiJEkkcmhvR0YkRihJJGV0YUdGJCEiIkkiZ0dGJEYoSSpsYW1iZGFjMjNHRiRGLSwmRihGKCokLUkldGFuaEc2JCUqcHJvdGVjdGVkR0koX3N5c2xpYkdGJDYjLCQqMEYpRihGK0YoRixGLSIiIyNGKEY6Ri5GOywmSSNoMkdGJEYoSSNoM0dGJEYtRjtGL0YtRjpGOkYtRihJI1BpR0Y1RigjRi1GOiowRidGKEYyRihGKUY6Rj9GKEY6RjtGLkY7RjxGQCNGLSIiKQ==</Equation></Text-field>
+</Output>
 </Group>
 <Group labelreference="L644" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">dq23_h3gh2_dh3:=eq_dq23_dh3 assuming h3&gt;h2:</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">dq23_h3gh2_dh3:=eq_dq23_dh3 assuming h3&gt;h2;</Text-field>
 </Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEvZHEyM19oM2doMl9kaDNGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSM6PUYnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUYjNigtRiw2JVEpZHEyM19kaDNGJ0YvRjItRjY2LVEiPUYnRjlGO0Y+RkBGQkZERkZGSEZKRk0tRiM2Jy1GNjYtUSomdW1pbnVzMDtGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GZ24tRiM2KC1JJm1mcmFjR0YkNigtSSNtbkdGJDYkUSIxRidGOS1GX282JFEiMkYnRjkvJS5saW5ldGhpY2tuZXNzR0Zhby8lK2Rlbm9tYWxpZ25HUSdjZW50ZXJGJy8lKW51bWFsaWduR0Zpby8lKWJldmVsbGVkR0Y9LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GYnAtRlxvNigtRiM2MC1GLDYlUSphbHBoYTIzXzBGJ0YvRjJGXnAtSSVtc3VwR0YkNiUtRiw2JVEkRDIzRidGL0YyLUZfbzYkUSIzRidGOS8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRidGXnAtRiw2JVEnJiM5NjE7RicvRjBGPUY5Rl5wLUYsNiVRImdGJ0YvRjJGXnAtSShtZmVuY2VkR0YkNiQtRiM2JkZeby1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIRmZuRmhuLUYjNiQtRlxxNiUtRiM2KC1GLDYlUSV0YW5oRidGanFGOS1GNjYtUTAmQXBwbHlGdW5jdGlvbjtGJ0Y5RjtGPkZARkJGREZGRkhGYXBGY3AtRl9yNiQtRiM2Ji1GXG82KC1GIzYwRmJvRl5wRl5xRl5wRmdxRl5wLUkmbXNxcnRHRiQ2I0Zib0ZecC1GW3Q2I0ZbckZecC1GW3Q2Iy1GIzYnRlktRiw2JVEjaDJGJ0YvRjItRjY2LVEiK0YnRjlGO0Y+RkBGQkZERkZGSEZmbkZobi1GLDYlUSNoM0YnRi9GMkY5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjktRiM2KC1GLDYlUScmIzk1MTtGJ0ZqcUY5Rl5wLUYsNiVRKmxhbWJkYWMyM0YnRi9GMkZcdUZfdUY5RmVvRmdvRmpvRlxwRlx1Rl91RjlGOUZcdUZfdUY5RmJvRmRxRjlGOUY5Rl5wLUYsNiVRJyYjOTYwO0YnRmpxRjlGXHVGX3VGOUZhdUZlb0Znb0Zqb0ZccEZcdUZfdUY5RmNyLUYjNigtRlxvNihGXm8tRl9vNiRRIjhGJ0Y5RmVvRmdvRmpvRlxwRl5wLUZcbzYoLUYjNjBGaHBGXnBGanJGXnAtRlxxNiVGXnFGYm9GZHFGXnBGaXVGXnBGanNGXnBGXXRGXHVGX3VGOS1GIzYmRl90Rlx1Rl91RjlGZW9GZ29Gam9GXHBGXHVGX3VGOUY5Rlx1Rl91RjlGXHVGX3VGOQ==">L0kpZHEyM19kaDNHNiIsJioySSphbHBoYTIzXzBHRiQiIiJJJEQyM0dGJCIiJEkkcmhvR0YkRihJJGV0YUdGJCEiIkkiZ0dGJEYoSSpsYW1iZGFjMjNHRiRGLSwmRihGKCokLUkldGFuaEc2JCUqcHJvdGVjdGVkR0koX3N5c2xpYkdGJDYjLCQqMEYpRihGK0YoRixGLSIiIyNGKEY6Ri5GOywmSSNoMkdGJEYtSSNoM0dGJEYoRjtGL0YtRjpGOkYtRihJI1BpR0Y1RigjRi1GOiowRidGKEYyRihGKUY6Rj9GKEY6RjtGLkY7RjxGQCNGLSIiKQ==</Equation></Text-field>
+</Output>
 </Group>
 <Group labelreference="L645" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
@@ -874,7 +880,7 @@ Matlab(rhs(eval(eq_Lg2Lf1h1,substi)),resultname='Lg2Lf1h1');
 Matlab(rhs(eval(eq_Lg1h2,substi)),resultname='Lg1h2');
 Matlab(rhs(eval(eq_Lg2h2,substi)),resultname='Lg2h2');
 Matlab(rhs(eval(eq_Lf1h2,substi)),resultname='Lf1h2');
-Matlab(eval(eq_DDx,substi),resultname='DDx');
+Matlab(eval(MatrixInverse(DDx),substi),resultname='DD_inv');
 Matlab(eval(bb,substi),resultname='bb');
 Matlab(u,resultname='u');
 </Text-field>
@@ -884,21 +890,21 @@ Matlab(u,resultname='u');
 <Text-field style="Line Printed Output" layout="Line Printed Output">q23 = alpha23_0 * tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) * D23 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) * sign((h2 - h3)) / 0.4e1;
 qA1 = alphaA1 * DA1 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * sqrt(h1) / 0.4e1;
 qA2 = alphaA2 * A2 * sqrt(0.2e1) * sqrt(g) * sqrt(h2);
-qA3 = alphaA3 * DA3 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * sqrt(h3) / 0.4e1;</Text-field>
-<Text-field style="Line Printed Output" layout="Line Printed Output">dq23_dh2 = alpha23_0 * D23 ^ 3 * rho / eta * g / lambdac23 * (0.1e1 - tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) ^ 2) * pi / 0.2e1 + alpha23_0 * tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) * D23 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * (abs(h2 - h3) ^ (-0.1e1 / 0.2e1)) / 0.8e1;
-dq23_dh3 = -alpha23_0 * D23 ^ 3 * rho / eta * g / lambdac23 * (0.1e1 - tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) ^ 2) * pi / 0.2e1 - alpha23_0 * tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) * D23 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * (abs(h2 - h3) ^ (-0.1e1 / 0.2e1)) / 0.8e1;
+qA3 = alphaA3 * DA3 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * sqrt(h3) / 0.4e1;
+dq23_dh2 = alpha23_0 * D23 ^ 3 * rho / eta * g / lambdac23 * (0.1e1 - tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) ^ 2) * pi / 0.2e1 + alpha23_0 * tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) * D23 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * (abs(h2 - h3) ^ (-0.1e1 / 0.2e1)) / 0.8e1;</Text-field>
+<Text-field style="Line Printed Output" layout="Line Printed Output">dq23_dh3 = -alpha23_0 * D23 ^ 3 * rho / eta * g / lambdac23 * (0.1e1 - tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) ^ 2) * pi / 0.2e1 - alpha23_0 * tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h2 - h3)) / lambdac23) * D23 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * (abs(h2 - h3) ^ (-0.1e1 / 0.2e1)) / 0.8e1;
 dq12_dh1 = 0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h1 - h2)) / lambdac12) ^ 2) * A12 + alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h1 - h2)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(h1 - h2) ^ (-0.1e1 / 0.2e1)) / 0.2e1;
 dq12_dh2 = -0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h1 - h2)) / lambdac12) ^ 2) * A12 - alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(h1 - h2)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(h1 - h2) ^ (-0.1e1 / 0.2e1)) / 0.2e1;
 Lf1h1 = (q12 - q23 - qA2) / Atank;
-Lf2h1 = dq12_dh1 / Atank ^ 2 * (-q12 - qA1) + (dq12_dh2 - dq23_dh2) / Atank ^ 2 * (q12 - q23 - qA2) - dq23_dh3 / Atank ^ 2 * (q23 - qA3);</Text-field>
-<Text-field style="Line Printed Output" layout="Line Printed Output">Lg1Lf1h1 = dq12_dh1 / Atank ^ 2;
-Lg2Lf1h1 = -dq23_dh3 / Atank ^ 2;
-Lg1h2 = 0.1e1 / Atank;
+Lf2h1 = dq12_dh1 / Atank ^ 2 * (-q12 - qA1) + (dq12_dh2 - dq23_dh2) / Atank ^ 2 * (q12 - q23 - qA2) - dq23_dh3 / Atank ^ 2 * (q23 - qA3);
+Lg1Lf1h1 = dq12_dh1 / Atank ^ 2;
+Lg2Lf1h1 = -dq23_dh3 / Atank ^ 2;</Text-field>
+<Text-field style="Line Printed Output" layout="Line Printed Output">Lg1h2 = 0.1e1 / Atank;
 Lg2h2 = -0.1e1 / Atank;
 Lf1h2 = (-q12 - qA1) / Atank - (q23 - qA3) / Atank;
-DDx = [dq12_dh1 / Atank ^ 2 -dq23_dh3 / Atank ^ 2; 0.1e1 / Atank -0.1e1 / Atank;];
-bb = [Lf2h1; Lf1h2;];</Text-field>
-<Text-field style="Line Printed Output" layout="Line Printed Output">u = [-Lg2h2 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v1 - Lf2h1) + Lg2Lf1h1 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v2 - Lf1h2); Lg1h2 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v1 - Lf2h1) - Lg1Lf1h1 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v2 - Lf1h2);];</Text-field>
+DD_inv = [-Lg2h2 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) Lg2Lf1h1 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1); Lg1h2 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) -Lg1Lf1h1 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1);];
+bb = [Lf2h1; Lf1h2;];
+u = [-Lg2h2 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v1 - Lf2h1) + Lg2Lf1h1 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v2 - Lf1h2); Lg1h2 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v1 - Lf2h1) - Lg1Lf1h1 / (Lg1h2 * Lg2Lf1h1 - Lg2h2 * Lg1Lf1h1) * (v2 - Lf1h2);];</Text-field>
 </Output>
 </Group>
 <Group labelreference="L670" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -990,8 +996,8 @@ Matlab(eq12_h1gh2_dh2_subs,resultname='eq12_h1gh2_dh2_subs');
 Matlab(eq12_h1gh2_dh2_d,resultname='eq12_h1gh2_dh2_d');</Text-field>
 </Input>
 <Output>
-<Text-field style="Line Printed Output" layout="Line Printed Output">eq12_h1gh2_dh1_subs = dq12_dh1 == 0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) ^ 2) * A12 + alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(dh12min) ^ (-0.1e1 / 0.2e1)) / 0.2e1;</Text-field>
-<Text-field style="Line Printed Output" layout="Line Printed Output">eq12_h1gh2_dh1_d = dq12_dh1 == 4 * alpha12_0 * A12 * Dh12 * rho * g / eta / lambdac12;
+<Text-field style="Line Printed Output" layout="Line Printed Output">eq12_h1gh2_dh1_subs = dq12_dh1 == 0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) ^ 2) * A12 + alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(dh12min) ^ (-0.1e1 / 0.2e1)) / 0.2e1;
+eq12_h1gh2_dh1_d = dq12_dh1 == 4 * alpha12_0 * A12 * Dh12 * rho * g / eta / lambdac12;
 eq12_h1gh2_dh2_subs = dq12_dh2 == -0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) ^ 2) * A12 - alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(dh12min) ^ (-0.1e1 / 0.2e1)) / 0.2e1;
 eq12_h1gh2_dh2_d = dq12_dh2 == -4 * alpha12_0 * A12 * Dh12 * rho * g / eta / lambdac12;</Text-field>
 </Output>
@@ -1011,11 +1017,124 @@ eq23_h2gh3_dh3_d = dq23_dh3 == -D23 ^ 3 * alpha23_0 * pi * rho * g / eta / lambd
 </Output>
 </Group>
 </Section>
+<Section collapsed="false" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title>
+<Text-field style="Heading 2" layout="Heading 2">Ruhelagen</Text-field></Title>
+<Group labelreference="L726" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq1_1 := eval(ffx(1),{q12(h1,h2)=q12_h1gh2})+gg(1)*uu(1);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEmZXExXzFGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSM6PUYnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUYjNiYtSSZtZnJhY0dGJDYoLUYjNiYtRiM2Jy1GNjYtUSomdW1pbnVzMDtGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GZm4tRiw2JVEqcTEyX2gxZ2gyRidGL0YyLUY2Ni1RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkhGZW5GZ24tRiM2KC1GLDYlUSRxQTFGJ0YvRjItRjY2LVEwJkFwcGx5RnVuY3Rpb247RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORmdvLUkobWZlbmNlZEdGJDYkLUYjNiYtRiw2JVEjaDFGJ0YvRjIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5RmFwRmRwRjlGOUZhcEZkcEY5LUYjNiYtRiw2JVEmQXRhbmtGJ0YvRjJGYXBGZHBGOS8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGYHEvJSliZXZlbGxlZEdGPS1GNjYtUSIrRidGOUY7Rj5GQEZCRkRGRkZIRmVuRmduLUYjNiYtRiM2KC1GLDYlUSNnZ0YnRi9GMkZjby1Gam82JC1GIzYmLUkjbW5HRiQ2JEZdcUY5RmFwRmRwRjlGOUZhcEZkcEY5LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkhGZm9GaG8tRiM2KC1GLDYlUSN1dUYnRi9GMkZjb0ZfckZhcEZkcEY5RjlGOUZhcEZkcEY5">LCYqJiwmSSpxMTJfaDFnaDJHNiIhIiItSSRxQTFHRiY2I0kjaDFHRiZGJyIiIkkmQXRhbmtHRiZGJ0YsKiYtSSNnZ0dGJjYjRixGLC1JI3V1R0YmRjFGLEYs</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L724" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq1 := eval(eq1_1,{qA1(h1)=rhs(eq_qA1)});</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEkZXExRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GIzYmLUkmbWZyYWNHRiQ2KC1GIzYmLUYjNictRjY2LVEqJnVtaW51czA7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmZuLUYsNiVRKnExMl9oMWdoMkYnRi9GMi1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIRmVuRmduLUYjNigtRlI2KC1JI21uR0YkNiRRIjFGJ0Y5LUZjbzYkUSI0RidGOS8lLmxpbmV0aGlja25lc3NHRmVvLyUrZGVub21hbGlnbkdRJ2NlbnRlckYnLyUpbnVtYWxpZ25HRl1wLyUpYmV2ZWxsZWRHRj0tRjY2LVExJkludmlzaWJsZVRpbWVzO0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZmcC1GIzYuLUYsNiVRKGFscGhhQTFGJ0YvRjJGYnAtSSVtc3VwR0YkNiUtRiw2JVEkREExRidGL0YyLUZjbzYkUSIyRidGOS8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRidGYnAtRiw2JVEnJiM5NjA7RicvRjBGPUY5RmJwLUkmbXNxcnRHRiQ2I0ZjcUZicC1GXnI2Iy1GLDYlUSJnRidGL0YyRmJwLUZecjYjLUYsNiVRI2gxRidGL0YyRjkvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5RmpyRl1zRjktRiM2Ji1GLDYlUSZBdGFua0YnRi9GMkZqckZdc0Y5RmlvRltwRl5wRmBwLUY2Ni1RIitGJ0Y5RjtGPkZARkJGREZGRkhGZW5GZ24tRiM2Ji1GIzYoLUYsNiVRI2dnRidGL0YyLUY2Ni1RMCZBcHBseUZ1bmN0aW9uO0YnRjlGO0Y+RkBGQkZERkZGSEZlcEZncC1JKG1mZW5jZWRHRiQ2JC1GIzYmRmJvRmpyRl1zRjlGOUZqckZdc0Y5RmJwLUYjNigtRiw2JVEjdXVGJ0YvRjJGXnRGYXRGanJGXXNGOUY5RjlGanJGXXNGOQ==">LCYqJiwmSSpxMTJfaDFnaDJHNiIhIiIqLkkoYWxwaGFBMUdGJiIiIkkkREExR0YmIiIjSSNQaUclKnByb3RlY3RlZEdGKkYsI0YqRixJImdHRiZGL0kjaDFHRiZGLyNGJyIiJUYqSSZBdGFua0dGJkYnRioqJi1JI2dnR0YmNiNGKkYqLUkjdXVHRiZGOEYqRio=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L725" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq2_1 := eval(ffx(2),{q12(h1,h2)=q12_h1gh2});</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEmZXEyXzFGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSM6PUYnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUkmbWZyYWNHRiQ2KC1GIzYmLUYjNigtRiw2JVEqcTEyX2gxZ2gyRidGL0YyLUY2Ni1RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GZ24tRiM2KC1GLDYlUSRxMjNGJ0YvRjItRjY2LVEwJkFwcGx5RnVuY3Rpb247RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORmJvLUkobWZlbmNlZEdGJDYkLUYjNigtRiw2JVEjaDJGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZhby9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSNoM0YnRi9GMi8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjlGZXBGaHBGOUZZLUYjNigtRiw2JVEkcUEyRidGL0YyRl5vLUZlbzYkLUYjNiZGaW9GZXBGaHBGOUY5RmVwRmhwRjlGOUZlcEZocEY5LUYjNiYtRiw2JVEmQXRhbmtGJ0YvRjJGZXBGaHBGOS8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGXXIvJSliZXZlbGxlZEdGPUZlcEZocEY5">KiYsKEkqcTEyX2gxZ2gyRzYiIiIiLUkkcTIzR0YlNiRJI2gyR0YlSSNoM0dGJSEiIi1JJHFBMkdGJTYjRipGLEYmSSZBdGFua0dGJUYs</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L716" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq2 := eval(eq2_1,qA2(h2)=rhs(eq_qA2));</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEkZXEyRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JJm1mcmFjR0YkNigtRiM2Ji1GIzYoLUYsNiVRKnExMl9oMWdoMkYnRi9GMi1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmduLUYjNigtRiw2JVEkcTIzRidGL0YyLUY2Ni1RMCZBcHBseUZ1bmN0aW9uO0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZiby1JKG1mZW5jZWRHRiQ2JC1GIzYoLUYsNiVRI2gyRidGL0YyLUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkhGYW8vRk5RLDAuMzMzMzMzM2VtRictRiw2JVEjaDNGJ0YvRjIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5RmVwRmhwRjlGWS1GIzYsLUYsNiVRKGFscGhhQTJGJ0YvRjItRjY2LVExJkludmlzaWJsZVRpbWVzO0YnRjlGO0Y+RkBGQkZERkZGSEZhb0Zjby1GLDYlUSNBMkYnRi9GMkZfcS1JJm1zcXJ0R0YkNiMtSSNtbkdGJDYkUSIyRidGOUZfcS1GZnE2Iy1GLDYlUSJnRidGL0YyRl9xLUZmcTYjRmlvRjlGOUZlcEZocEY5LUYjNiYtRiw2JVEmQXRhbmtGJ0YvRjJGZXBGaHBGOS8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGXXMvJSliZXZlbGxlZEdGPUZlcEZocEY5">KiYsKEkqcTEyX2gxZ2gyRzYiIiIiLUkkcTIzR0YlNiRJI2gyR0YlSSNoM0dGJSEiIiosSShhbHBoYUEyR0YlRiZJI0EyR0YlRiYiIiMjRiZGMEkiZ0dGJUYxRipGMUYsRiZJJkF0YW5rR0YlRiw=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L717" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">fsolve(eval({eq1=0,eq2=0},plist union {h2=0.1}),{h1,qZ1}) assuming h1&gt;h2, h2::positive;</Text-field>
+</Input>
+<Output>
+<Text-field style="HyperlinkError" layout="HyperlinkError"><Hyperlink linktarget="http://www.maplesoft.com/support/help/errors/view.aspx?path=Error,%20(in%20assuming)%20when%20calling%20'fsolve'.%20Received%3A%20'%7Bh3,%20q12_h1gh2%7D%20are%20in%20the%20equation,%20and%20are%20not%20solved%20for'" hyperlink="true"><Font style="HyperlinkError">Error, (in assuming) when calling 'fsolve'. Received: '{h3, q12_h1gh2} are in the equation, and are not solved for'</Font></Hyperlink></Text-field>
+</Output>
+</Group>
+<Group labelreference="L715" drawlabel="true">
+<Input>
+<Text-field style="Text" layout="Normal">h1&lt;h2:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L723" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq1_1 := eval(ffx(1),{q12(h1,h2)=q12_h2gh1})+gg(1)*uu(1);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEmZXExXzFGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSM6PUYnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUYjNiYtSSZtZnJhY0dGJDYoLUYjNiYtRiM2Jy1GNjYtUSomdW1pbnVzMDtGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GZm4tRiw2JVEqcTEyX2gyZ2gxRidGL0YyLUY2Ni1RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkhGZW5GZ24tRiM2KC1GLDYlUSRxQTFGJ0YvRjItRjY2LVEwJkFwcGx5RnVuY3Rpb247RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORmdvLUkobWZlbmNlZEdGJDYkLUYjNiYtRiw2JVEjaDFGJ0YvRjIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5RmFwRmRwRjlGOUZhcEZkcEY5LUYjNiYtRiw2JVEmQXRhbmtGJ0YvRjJGYXBGZHBGOS8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGYHEvJSliZXZlbGxlZEdGPS1GNjYtUSIrRidGOUY7Rj5GQEZCRkRGRkZIRmVuRmduLUYjNiYtRiM2KC1GLDYlUSNnZ0YnRi9GMkZjby1Gam82JC1GIzYmLUkjbW5HRiQ2JEZdcUY5RmFwRmRwRjlGOUZhcEZkcEY5LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkhGZm9GaG8tRiM2KC1GLDYlUSN1dUYnRi9GMkZjb0ZfckZhcEZkcEY5RjlGOUZhcEZkcEY5">LCYqJiwmSSpxMTJfaDJnaDFHNiIhIiItSSRxQTFHRiY2I0kjaDFHRiZGJyIiIkkmQXRhbmtHRiZGJ0YsKiYtSSNnZ0dGJjYjRixGLC1JI3V1R0YmRjFGLEYs</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L721" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq1 := eval(eq1_1,{qA1(h1)=rhs(eq_qA1)});</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEkZXExRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GIzYmLUkmbWZyYWNHRiQ2KC1GIzYmLUYjNictRjY2LVEqJnVtaW51czA7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmZuLUYsNiVRKnExMl9oMmdoMUYnRi9GMi1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIRmVuRmduLUYjNigtRlI2KC1JI21uR0YkNiRRIjFGJ0Y5LUZjbzYkUSI0RidGOS8lLmxpbmV0aGlja25lc3NHRmVvLyUrZGVub21hbGlnbkdRJ2NlbnRlckYnLyUpbnVtYWxpZ25HRl1wLyUpYmV2ZWxsZWRHRj0tRjY2LVExJkludmlzaWJsZVRpbWVzO0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZmcC1GIzYuLUYsNiVRKGFscGhhQTFGJ0YvRjJGYnAtSSVtc3VwR0YkNiUtRiw2JVEkREExRidGL0YyLUZjbzYkUSIyRidGOS8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRidGYnAtRiw2JVEnJiM5NjA7RicvRjBGPUY5RmJwLUkmbXNxcnRHRiQ2I0ZjcUZicC1GXnI2Iy1GLDYlUSJnRidGL0YyRmJwLUZecjYjLUYsNiVRI2gxRidGL0YyRjkvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5RmpyRl1zRjktRiM2Ji1GLDYlUSZBdGFua0YnRi9GMkZqckZdc0Y5RmlvRltwRl5wRmBwLUY2Ni1RIitGJ0Y5RjtGPkZARkJGREZGRkhGZW5GZ24tRiM2Ji1GIzYoLUYsNiVRI2dnRidGL0YyLUY2Ni1RMCZBcHBseUZ1bmN0aW9uO0YnRjlGO0Y+RkBGQkZERkZGSEZlcEZncC1JKG1mZW5jZWRHRiQ2JC1GIzYmRmJvRmpyRl1zRjlGOUZqckZdc0Y5RmJwLUYjNigtRiw2JVEjdXVGJ0YvRjJGXnRGYXRGanJGXXNGOUY5RjlGanJGXXNGOQ==">LCYqJiwmSSpxMTJfaDJnaDFHNiIhIiIqLkkoYWxwaGFBMUdGJiIiIkkkREExR0YmIiIjSSNQaUclKnByb3RlY3RlZEdGKkYsI0YqRixJImdHRiZGL0kjaDFHRiZGLyNGJyIiJUYqSSZBdGFua0dGJkYnRioqJi1JI2dnR0YmNiNGKkYqLUkjdXVHRiZGOEYqRio=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L722" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq2_1 := eval(ffx(2),{q12(h1,h2)=q12_h2gh1});</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEmZXEyXzFGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSM6PUYnL0YzUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGPS8lKXN0cmV0Y2h5R0Y9LyUqc3ltbWV0cmljR0Y9LyUobGFyZ2VvcEdGPS8lLm1vdmFibGVsaW1pdHNHRj0vJSdhY2NlbnRHRj0vJSdsc3BhY2VHUSwwLjI3Nzc3NzhlbUYnLyUncnNwYWNlR0ZMLUkmbWZyYWNHRiQ2KC1GIzYmLUYjNigtRiw2JVEqcTEyX2gyZ2gxRidGL0YyLUY2Ni1RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GZ24tRiM2KC1GLDYlUSRxMjNGJ0YvRjItRjY2LVEwJkFwcGx5RnVuY3Rpb247RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORmJvLUkobWZlbmNlZEdGJDYkLUYjNigtRiw2JVEjaDJGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZhby9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSNoM0YnRi9GMi8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjlGZXBGaHBGOUZZLUYjNigtRiw2JVEkcUEyRidGL0YyRl5vLUZlbzYkLUYjNiZGaW9GZXBGaHBGOUY5RmVwRmhwRjlGOUZlcEZocEY5LUYjNiYtRiw2JVEmQXRhbmtGJ0YvRjJGZXBGaHBGOS8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGXXIvJSliZXZlbGxlZEdGPUZlcEZocEY5">KiYsKEkqcTEyX2gyZ2gxRzYiIiIiLUkkcTIzR0YlNiRJI2gyR0YlSSNoM0dGJSEiIi1JJHFBMkdGJTYjRipGLEYmSSZBdGFua0dGJUYs</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L718" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">eq2 := eval(eq2_1,qA2(h2)=rhs(eq_qA2)); </Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEkZXEyRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JJm1mcmFjR0YkNigtRiM2Ji1GIzYoLUYsNiVRKnExMl9oMmdoMUYnRi9GMi1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmduLUYjNigtRiw2JVEkcTIzRidGL0YyLUY2Ni1RMCZBcHBseUZ1bmN0aW9uO0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZiby1JKG1mZW5jZWRHRiQ2JC1GIzYoLUYsNiVRI2gyRidGL0YyLUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkhGYW8vRk5RLDAuMzMzMzMzM2VtRictRiw2JVEjaDNGJ0YvRjIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5RmVwRmhwRjlGWS1GIzYsLUYsNiVRKGFscGhhQTJGJ0YvRjItRjY2LVExJkludmlzaWJsZVRpbWVzO0YnRjlGO0Y+RkBGQkZERkZGSEZhb0Zjby1GLDYlUSNBMkYnRi9GMkZfcS1JJm1zcXJ0R0YkNiMtSSNtbkdGJDYkUSIyRidGOUZfcS1GZnE2Iy1GLDYlUSJnRidGL0YyRl9xLUZmcTYjRmlvRjlGOUZlcEZocEY5LUYjNiYtRiw2JVEmQXRhbmtGJ0YvRjJGZXBGaHBGOS8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGXXMvJSliZXZlbGxlZEdGPUZlcEZocEY5">KiYsKEkqcTEyX2gyZ2gxRzYiIiIiLUkkcTIzR0YlNiRJI2gyR0YlSSNoM0dGJSEiIiosSShhbHBoYUEyR0YlRiZJI0EyR0YlRiYiIiMjRiZGMEkiZ0dGJUYxRipGMUYsRiZJJkF0YW5rR0YlRiw=</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L720" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">assume(h1&lt;h2, h2::positive);</Text-field>
+</Input>
+</Group>
+<Group labelreference="L719" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">fsolve(eval({eq1=0,eq2=0},plist union {h2=0.1}),{h1,qZ1}); #bledsinn</Text-field>
+</Input>
+<Output>
+<Text-field style="HyperlinkError" layout="HyperlinkError"><Hyperlink linktarget="http://www.maplesoft.com/support/help/errors/view.aspx?path=Error,%20(in%20fsolve)%20%7Bh3,%20q12_h2gh1%7D%20are%20in%20the%20equation,%20and%20are%20not%20solved%20for" hyperlink="true"><Font style="HyperlinkError">Error, (in fsolve) {h3, q12_h2gh1} are in the equation, and are not solved for</Font></Hyperlink></Text-field>
+</Output>
+</Group>
 <Group labelreference="L671" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
+<Group labelreference="L711" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L712" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L713" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L714" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
 <Group labelreference="L672" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
