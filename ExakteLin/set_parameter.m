@@ -11,10 +11,10 @@
  close all;
  
 Tank = 3;
-parSys.DA1_Abw = 1.0;
-parSys.DA3_Abw = 1.0;
-parSys.deltay1d = 0.3;
-parSys.deltay2d = -0.2;
+parSys.DA1_Abw = 1;
+parSys.DA3_Abw = 1;
+parSys.deltay1d = 0.1;
+parSys.deltay2d = -0.05;
 
 % Parameter des Systems
 parSys.Atank     = 1.539e-2;      % Grundfl?che Tank
@@ -43,9 +43,9 @@ parSys.dh23min   = 0.1e-3;
 parSys.Ta = 0.2;                
 
 % Anfangsbedingung
-parSys.h1_0 = 0.10; % aus Maple für 2-Tank Modell
-parSys.h2_0 = 0.05;
-parSys.h3_0 = 0.05;
+parSys.h1_0 = 0.18; % aus Maple für 2-Tank Modell
+parSys.h2_0 = 0.1;
+parSys.h3_0 = 0.1;
 
 % Maximale Zufluesse
 parSys.qZ1max = 4.5e-3/60;        % Maximaler Zufluss Z1
@@ -67,9 +67,10 @@ parInit.a0 = 1e-2;
 parInit.a1 = 0.2; 
 
 % 3-Tank Regler
-parInit.a10 = 0.0064;
-parInit.a11 = 0.08;
-parInit.a20 = 0.01;
+lambda=0.1;
+parInit.a10 = lambda^2;%0.00640;
+parInit.a11 =  2*lambda;%0.08;
+parInit.a20 = 0.1; %0.01
 parInit.a1I = 5e-5;
 parInit.a2I = 2e-3;
 

@@ -4,7 +4,7 @@ if Tank < 2.5
     % Eigenwerte bei lambda
     lambda=-2.3*0.01; 
 else
-    lambda=-5.2e-2;
+    lambda=-5e-2; %-5.2e-2;
 end
 % Anfangszustand
 parSollwertfilter.x0_Filter=[0;0;0];
