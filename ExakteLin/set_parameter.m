@@ -9,15 +9,21 @@
 
  clear all;
  close all;
+
  
+% 2 oder 3 Tank Modell
 Tank = 3;
+
+%Parameterabweichungen
 parSys.DA1_Abw = 1;
 parSys.DA3_Abw = 1;
+
+% Sollwert-Spruenge 
 parSys.deltay1d = 0.1;
 parSys.deltay2d = -0.05;
 
 % Parameter des Systems
-parSys.Atank     = 1.539e-2;      % Grundfl?che Tank
+parSys.Atank     = 1.539e-2;      % Grundflaeche Tank
 parSys.rho       = 1000;          % Dichte Wasser
 parSys.eta       = 8.9e-4;        % Dynamische Viskosit?t Wasser
 parSys.g         = 9.81;          % Gravitationskonstante
@@ -43,8 +49,8 @@ parSys.dh23min   = 0.1e-3;
 parSys.Ta = 0.2;                
 
 % Anfangsbedingung
-parSys.h1_0 = 0.18; % aus Maple für 2-Tank Modell
-parSys.h2_0 = 0.1;
+parSys.h1_0 = 0.18; % aus Maple fuer 2-Tank Modell
+parSys.h2_0 = 0.1;  % aus Maple fuer 2-Tank Modell
 parSys.h3_0 = 0.1;
 
 % Maximale Zufluesse
@@ -68,18 +74,18 @@ parInit.a1 = 0.2;
 
 % 3-Tank Regler
 lambda=0.1;
-parInit.a10 = lambda^2;%0.00640;
-parInit.a11 =  2*lambda;%0.08;
-parInit.a20 = 0.1; %0.01
+parInit.a10 = lambda^2;  %0.00640;
+parInit.a11 =  2*lambda; %0.08;
+parInit.a20 = 0.1;       %0.01
 parInit.a1I = 5e-5;
 parInit.a2I = 2e-3;
-
 
 
 %Abkuerzungen fuer die folgenden Berechnungen
 params;
 
 % Linearisierung
+
 % dq12_dh1(dh12min)
 eq12_h1gh2_dh1_subs = 0.2e1 * alpha12_0 * Dh12 * rho / eta * g / lambdac12 * (0.1e1 - tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) ^ 2) * A12 + alpha12_0 * tanh(0.2e1 * Dh12 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh12min)) / lambdac12) * A12 * sqrt(0.2e1) * sqrt(g) * (abs(dh12min) ^ (-0.1e1 / 0.2e1)) / 0.2e1;
 % dq12_dh1(0)
@@ -100,14 +106,19 @@ k_dq12_dh2 = (eq12_h1gh2_dh2_subs - eq12_h1gh2_dh2_d)/dh12min;
 parSys.k_dq12_dh2 = k_dq12_dh2;
 parSys.d_dq12_dh2 = eq12_h1gh2_dh2_d;
 
+% dq23_dh1(dh23min)
 eq23_h2gh3_dh2_subs =  alpha23_0 * D23 ^ 3 * rho / eta * g / lambdac23 * (0.1e1 - tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh23min)) / lambdac23) ^ 2) * pi / 0.2e1 + alpha23_0 * tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh23min)) / lambdac23) * D23 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * (abs(dh23min) ^ (-0.1e1 / 0.2e1)) / 0.8e1;
+% dq23_dh1(0)
 eq23_h2gh3_dh2_d = D23 ^ 3 * alpha23_0 * pi * rho * g / eta / lambdac23;
+% Parameter fuer Geradengleichung von dq23_dh1
 parSys.k_dq23_dh2 = (eq23_h2gh3_dh2_subs - eq23_h2gh3_dh2_d)/dh23min;
 parSys.d_dq23_dh2 = eq23_h2gh3_dh2_d;
 
-
+% dq23_dh2(dh23min)
 eq23_h2gh3_dh3_subs =  -alpha23_0 * D23 ^ 3 * rho / eta * g / lambdac23 * (0.1e1 - tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh23min)) / lambdac23) ^ 2) * pi / 0.2e1 - alpha23_0 * tanh(0.2e1 * D23 * rho / eta * sqrt(0.2e1) * sqrt(g) * sqrt(abs(dh23min)) / lambdac23) * D23 ^ 2 * pi * sqrt(0.2e1) * sqrt(g) * (abs(dh23min) ^ (-0.1e1 / 0.2e1)) / 0.8e1;
+% dq23_dh2(0)
 eq23_h2gh3_dh3_d =  -D23 ^ 3 * alpha23_0 * pi * rho * g / eta / lambdac23;
+% Parameter fuer Geradengleichung von dq23_dh2
 parSys.k_dq23_dh3 = (eq23_h2gh3_dh3_subs - eq23_h2gh3_dh3_d)/dh23min;
 parSys.d_dq23_dh3 = eq23_h2gh3_dh3_d;
 
