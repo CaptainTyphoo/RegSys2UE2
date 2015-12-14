@@ -31,10 +31,17 @@ if(video_on==1)
     open(writerObj);
 end
 
-h_max = 0.5;         % 500 ml
+h_max = 0.5;         % 500 mm
 z_max = 7.5e-5;      % 4.5l/min
 a_max= max([a1;a2]); % max. occuring a
 
+%negative Zufluesse begrenzen
+z1(find(z1<0))=0;
+z3(find(z3<0))=0;
+
+%maximale Zufluesse begrenzen
+z1(find(z1>z_max))=z_max;
+z3(find(z3>z_max))=z_max;
 
 %Normalize h to [0 10]
 h1=h1.*10./h_max;
