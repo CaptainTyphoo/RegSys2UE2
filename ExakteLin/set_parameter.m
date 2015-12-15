@@ -12,7 +12,7 @@
 
 %% Parameter 
 % 2 oder 3 Tank Modell
-Tank = 3;
+Tank = 2;
 
 %Parameterabweichungen
 parSys.DA1_Abw = 1;% 1.1;
@@ -51,9 +51,15 @@ parSys.dh23min   = 0.1e-3;
 parSys.Ta = 0.2;                
 
 % Anfangsbedingung
-parSys.h1_0 = 0.18;  % 0.1;
-parSys.h2_0 = 0.1;   % 0.05;
-parSys.h3_0 = 0.1;   % 0.1;
+if Tank < 2.5
+    parSys.h1_0 = 0.18;
+    parSys.h2_0 = 0.1;
+    parSys.h3_0 = 0.1;
+else
+    parSys.h1_0 = 0.1;
+    parSys.h2_0 = 0.05;
+    parSys.h3_0 = 0.1;
+end
 
 % Maximale Zufluesse
 parSys.qZ1max = 4.5e-3/60;        % Maximaler Zufluss Z1
