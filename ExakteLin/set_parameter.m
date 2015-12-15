@@ -12,17 +12,15 @@
 
 %% Parameter 
 % 2 oder 3 Tank Modell
-Tank = 3;
+Tank = 2; % aendert Eigenwerte beim Sollwertfilter
 
 %Parameterabweichungen
-parSys.DA1_Abw = 1;% 1.1;
-parSys.DA3_Abw = 1;% 1.2;
+parSys.DA1_Abw = 1; %1.1;
+parSys.DA3_Abw = 1; %1.2;
 
 % Sollwert-Spruenge 
-parSys.deltay1d = 0.1;   %  0.3;
-parSys.deltay2d = -0.05; % -0.2;
-
-
+parSys.deltay1d = 0.1; %0.3;  
+parSys.deltay2d = -0.05; %-0.2;
 
 % Parameter des Systems
 parSys.Atank     = 1.539e-2;      % Grundflaeche Tank
@@ -78,11 +76,13 @@ lambda=0.1;
 parInit.a0 = lambda^2; 
 parInit.a1 = 2*lambda; 
 
-% 3-Tank Regler (Eigenwerte bei -0.1)
+% 3-Tank Regler
 lambda=0.1;
 parInit.a10 = lambda^2;  
-parInit.a11 =  2*lambda; 
-parInit.a20 = 0.1;      
+parInit.a11 = 2*lambda; 
+parInit.a20 = lambda;  
+
+% Integralanteil (zum Ausschalten des I-Anteils Null setzen)
 parInit.a1I = 5e-5;
 parInit.a2I = 2e-3;
 

@@ -1,7 +1,7 @@
 %set_parameter;
-Atant =      1.539e-2;      % Grundfläche Tank
+Atant =      1.539e-2;      % Grundfl?che Tank
 rho =        1000;          % Dichte Wasser
-eta =        8.9e-4;        % Dynamische Viskosität Wasser
+eta =        8.9e-4;        % Dynamische Viskosit?t Wasser
 g =         9.81;          % Gravitationskonstante
 alpha1 =    0.0583;        % Kontraktionskoeffizient AV1
 DA1 =        15e-3;         % Durchmesser AV1
@@ -53,18 +53,18 @@ dq12_dh2_lin=eq12_h1gh2_dh2_d+k_dq12_dh2.*abs(deltah);
 
 
 %% Plot
-
-figure()
-subplot(2,1,1)
-hold on;
-title('dq12dh1');
+figure();
 plot(deltah,dq12_dh1);
+hold on
 plot(deltah,dq12_dh1_lin);
-subplot(2,1,2);
-hold on;
-title('dq12dh2');
+title('dq12dh1');
+figure();
 plot(deltah,dq12_dh2);
+hold on;
 plot(deltah,dq12_dh2_lin);
+title('dq12dh2');
+
+
 
 
    
