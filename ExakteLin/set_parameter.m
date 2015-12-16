@@ -12,11 +12,11 @@
 
 %% Parameter 
 % 2 oder 3 Tank Modell
-Tank = 2;
+Tank = 3;
 
 %Parameterabweichungen
-parSys.DA1_Abw = 1;% 1.1;
-parSys.DA3_Abw = 1;% 1.2;
+parSys.DA1_Abw = 1.1;% 1.1;
+parSys.DA3_Abw = 1.2;% 1.2;
 
 % Sollwert-Spruenge 
 parSys.deltay1d = 0.1;   %  0.3;
@@ -56,9 +56,9 @@ if Tank < 2.5
     parSys.h2_0 = 0.1;
     parSys.h3_0 = 0.1;
 else
-    parSys.h1_0 = 0.1;
-    parSys.h2_0 = 0.05;
-    parSys.h3_0 = 0.1;
+    parSys.h1_0 = 0.18; %0.1
+    parSys.h2_0 = 0.1; %0.05
+    parSys.h3_0 = 0.1; %0.05 od 0.1
 end
 
 % Maximale Zufluesse
