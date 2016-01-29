@@ -77,14 +77,20 @@ parInit.a0 = lambda^2;
 parInit.a1 = 2*lambda; 
 
 % 3-Tank Regler
-lambda=0.1;
-parInit.a10 = lambda^2;  
-parInit.a11 = 2*lambda; 
-parInit.a20 = lambda;  
+lambda=-0.1;
+lambdaI=-0.01;
+p1=poly([lambda 0 0 ;
+         0   lambda 0;
+         0  0 lambdaI]);
+p2=poly([lambda 0 ;        
+         0 lambdaI]);
+parInit.a10 = p1(3);  
+parInit.a11 = p1(2); 
+parInit.a20 = p2(2);  
 
 % Integralanteil (zum Ausschalten des I-Anteils Null setzen)
-parInit.a1I = 5e-5;
-parInit.a2I = 2e-3;
+parInit.a1I = p1(4);
+parInit.a2I = p2(3);
 
 
 %% Linearisierung
